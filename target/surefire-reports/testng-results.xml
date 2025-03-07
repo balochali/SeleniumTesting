@@ -2,44 +2,28 @@
 <testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-07T10:15:56 PKT" name="Surefire suite" finished-at="2025-03-07T10:16:03 PKT" duration-ms="7313">
+  <suite started-at="2025-03-07T16:06:42 PKT" name="Surefire suite" finished-at="2025-03-07T16:07:03 PKT" duration-ms="20477">
     <groups>
     </groups>
-    <test started-at="2025-03-07T10:15:56 PKT" name="Surefire test" finished-at="2025-03-07T10:16:03 PKT" duration-ms="7313">
+    <test started-at="2025-03-07T16:06:42 PKT" name="Surefire test" finished-at="2025-03-07T16:07:03 PKT" duration-ms="20477">
       <class name="com.example.tests.WalletAuthTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.tests.WalletAuthTest@7880cdf3]" started-at="2025-03-07T10:15:56 PKT" name="setup" finished-at="2025-03-07T10:16:03 PKT" duration-ms="7259" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.tests.WalletAuthTest@7880cdf3]" started-at="2025-03-07T16:06:42 PKT" name="setup" finished-at="2025-03-07T16:07:03 PKT" duration-ms="20420" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 134
-Current browser version is 133.0.6943.141 with binary path C:\Program Files\ChromeDriver\chrome-win64\chrome.exe 
-Host info: host: 'ALI', ip: '172.29.112.1'
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [user-data-dir=C:\Users\DELL..., profile-directory=Default, --disable-popup-blocking, --start-maximized], binary: C:\Program Files\ChromeDriv..., extensions: []}}]}]]]>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'ALI', ip: '172.29.112.1']]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 134
-Current browser version is 133.0.6943.141 with binary path C:\Program Files\ChromeDriver\chrome-win64\chrome.exe 
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
 Host info: host: 'ALI', ip: '172.29.112.1'
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [user-data-dir=C:\Users\DELL..., profile-directory=Default, --disable-popup-blocking, --start-maximized], binary: C:\Program Files\ChromeDriv..., extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
 at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at com.example.tests.WalletAuthTest.setup(WalletAuthTest.java:39)
+at com.example.tests.WalletAuthTest.setup(WalletAuthTest.java:36)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -69,45 +53,37 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to bind the port.
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:250)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 36 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testOpenWebsite()[pri:1, instance:com.example.tests.WalletAuthTest@7880cdf3]" started-at="2025-03-07T10:16:03 PKT" name="testOpenWebsite" finished-at="2025-03-07T10:16:03 PKT" duration-ms="0" status="SKIP">
+        <test-method signature="testOpenWebsite()[pri:1, instance:com.example.tests.WalletAuthTest@7880cdf3]" started-at="2025-03-07T16:07:03 PKT" name="testOpenWebsite" finished-at="2025-03-07T16:07:03 PKT" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 134
-Current browser version is 133.0.6943.141 with binary path C:\Program Files\ChromeDriver\chrome-win64\chrome.exe 
-Host info: host: 'ALI', ip: '172.29.112.1'
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [user-data-dir=C:\Users\DELL..., profile-directory=Default, --disable-popup-blocking, --start-maximized], binary: C:\Program Files\ChromeDriv..., extensions: []}}]}]]]>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'ALI', ip: '172.29.112.1']]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 134
-Current browser version is 133.0.6943.141 with binary path C:\Program Files\ChromeDriver\chrome-win64\chrome.exe 
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
 Host info: host: 'ALI', ip: '172.29.112.1'
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [user-data-dir=C:\Users\DELL..., profile-directory=Default, --disable-popup-blocking, --start-maximized], binary: C:\Program Files\ChromeDriv..., extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
 at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at com.example.tests.WalletAuthTest.setup(WalletAuthTest.java:39)
+at com.example.tests.WalletAuthTest.setup(WalletAuthTest.java:36)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -137,45 +113,37 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to bind the port.
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:250)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 36 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenWebsite -->
-        <test-method signature="testConnectWallet()[pri:2, instance:com.example.tests.WalletAuthTest@7880cdf3]" started-at="2025-03-07T10:16:03 PKT" name="testConnectWallet" finished-at="2025-03-07T10:16:03 PKT" duration-ms="0" status="SKIP">
+        <test-method signature="testConnectWallet()[pri:2, instance:com.example.tests.WalletAuthTest@7880cdf3]" started-at="2025-03-07T16:07:03 PKT" name="testConnectWallet" finished-at="2025-03-07T16:07:03 PKT" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 134
-Current browser version is 133.0.6943.141 with binary path C:\Program Files\ChromeDriver\chrome-win64\chrome.exe 
-Host info: host: 'ALI', ip: '172.29.112.1'
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [user-data-dir=C:\Users\DELL..., profile-directory=Default, --disable-popup-blocking, --start-maximized], binary: C:\Program Files\ChromeDriv..., extensions: []}}]}]]]>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'ALI', ip: '172.29.112.1']]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 134
-Current browser version is 133.0.6943.141 with binary path C:\Program Files\ChromeDriver\chrome-win64\chrome.exe 
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
 Host info: host: 'ALI', ip: '172.29.112.1'
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [user-data-dir=C:\Users\DELL..., profile-directory=Default, --disable-popup-blocking, --start-maximized], binary: C:\Program Files\ChromeDriv..., extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
 at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at com.example.tests.WalletAuthTest.setup(WalletAuthTest.java:39)
+at com.example.tests.WalletAuthTest.setup(WalletAuthTest.java:36)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -205,45 +173,37 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to bind the port.
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:250)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 36 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConnectWallet -->
-        <test-method signature="testSelectMetaMask()[pri:3, instance:com.example.tests.WalletAuthTest@7880cdf3]" started-at="2025-03-07T10:16:03 PKT" name="testSelectMetaMask" finished-at="2025-03-07T10:16:03 PKT" duration-ms="0" status="SKIP">
+        <test-method signature="testSelectMetaMask()[pri:3, instance:com.example.tests.WalletAuthTest@7880cdf3]" started-at="2025-03-07T16:07:03 PKT" name="testSelectMetaMask" finished-at="2025-03-07T16:07:03 PKT" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 134
-Current browser version is 133.0.6943.141 with binary path C:\Program Files\ChromeDriver\chrome-win64\chrome.exe 
-Host info: host: 'ALI', ip: '172.29.112.1'
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [user-data-dir=C:\Users\DELL..., profile-directory=Default, --disable-popup-blocking, --start-maximized], binary: C:\Program Files\ChromeDriv..., extensions: []}}]}]]]>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'ALI', ip: '172.29.112.1']]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 134
-Current browser version is 133.0.6943.141 with binary path C:\Program Files\ChromeDriver\chrome-win64\chrome.exe 
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
 Host info: host: 'ALI', ip: '172.29.112.1'
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [user-data-dir=C:\Users\DELL..., profile-directory=Default, --disable-popup-blocking, --start-maximized], binary: C:\Program Files\ChromeDriv..., extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
 at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at com.example.tests.WalletAuthTest.setup(WalletAuthTest.java:39)
+at com.example.tests.WalletAuthTest.setup(WalletAuthTest.java:36)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -273,13 +233,21 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to bind the port.
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:250)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 36 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSelectMetaMask -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.WalletAuthTest@7880cdf3]" started-at="2025-03-07T10:16:03 PKT" name="tearDown" finished-at="2025-03-07T10:16:03 PKT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.WalletAuthTest@7880cdf3]" started-at="2025-03-07T16:07:03 PKT" name="tearDown" finished-at="2025-03-07T16:07:03 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

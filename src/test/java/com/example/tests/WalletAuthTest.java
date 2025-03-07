@@ -21,28 +21,21 @@ public class WalletAuthTest {
 
     @BeforeClass
     public void setup() {
-        WebDriverManager.chromedriver().setup();
+        // 1️⃣ Set the path for ChromeDriver
+        System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\chromium\\chrome.exe");  // Update for your OS
 
-        // Chrome options to use an existing profile with extensions
+        // 2️⃣ Use Chromium instead of Chrome
         ChromeOptions options = new ChromeOptions();
-        options.setBinary("C:\\Program Files\\ChromeDriver\\chrome-win64\\chrome.exe"); // Set Chrome for Testing binary
-        
-        // Path to your Chrome profile (modify this path as needed)
-        options.addArguments("user-data-dir=C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome for Testing\\User Data");
-        options.addArguments("profile-directory=Default"); // Use the default profile
-        
-        // Ensure popups are not blocked
+        options.setBinary("C:\\webdriver\\chromium\\chrome.exe");  // Update path to Chromium
+
+        // Optional Arguments for Stability
         options.addArguments("--disable-popup-blocking");
         options.addArguments("--start-maximized");
 
-        // Initialize ChromeDriver with options
+        // 3️⃣ Launch Chromium with Selenium
         driver = new ChromeDriver(options);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-
-        // Ensure the correct page is loaded
-        if (!driver.getCurrentUrl().contains("bubsy.ai")) {
-            driver.get("https://my-staging.bubsy.ai/");
-        }
+        driver.get("https://my-staging.bubsy.ai/");
+ 
     }
 
     @Test(priority = 1)
