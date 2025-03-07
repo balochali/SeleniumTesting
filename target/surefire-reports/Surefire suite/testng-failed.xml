@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.example.tests.WalletAuthTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testConnectWallet"/>
+          <include name="setup"/>
+          <include name="testOpenWebsite"/>
+          <include name="testSelectMetaMask"/>
+        </methods>
+      </class> <!-- com.example.tests.WalletAuthTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
