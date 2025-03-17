@@ -6,9 +6,7 @@
       <class name="com.example.tests.WalletAuthTest">
         <methods>
           <include name="tearDown"/>
-          <include name="testConnectWallet"/>
           <include name="setup"/>
-          <include name="testOpenWebsite"/>
           <include name="testSelectMetaMask"/>
         </methods>
       </class> <!-- com.example.tests.WalletAuthTest -->
